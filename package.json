@@ -1,0 +1,23 @@
+{
+  "name": "upassist-scss-framework",
+  "version": "0.0.1",
+  "description": "SCSS Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/UpAssist/scss-framework.git"
+  },
+  "keywords": [
+    "scss",
+    "framework"
+  ],
+  "author": "Henjo Hoeksma <henjo@upassist.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UpAssist/scss-framework/issues"
+  },
+  "homepage": "https://github.com/UpAssist/scss-framework#readme"
+}
