@@ -3,13 +3,13 @@
 $font-family-arimo: 'Arimo', sans-serif;
 
 // Kick off with normalizing
-@import 'normalize';
+@import '~normalize-scss';
 
 // All variables, override them when desired
 @import 'variables';
 
 // Default theme uses fontawesome (which should be loaded after variables)
-@import 'font-awesome';
+@import '~font-awesome/scss/font-awesome';
 
 // Load animated.css
 @import url(http://s.mlcdn.co/animate.css);

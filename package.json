@@ -1,6 +1,6 @@
 {
   "name": "upassist-scss-framework",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "SCSS Framework",
   "main": "index.js",
   "scripts": {
