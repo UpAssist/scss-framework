@@ -1,0 +1,103 @@
+// Variables
+$grid-columns: 12 !default;
+$grid-padding: 0 .5rem !default;
+$grid-container-width: 1240px !default;
+$grid-generate-small-html-classes: false !default;
+$grid-generate-large-html-classes: false !default;
+$grid-border: false !default;
+$grid-border-color: $deep-cerulean !default;
+$grid-container-margin: 0 auto $global-margin auto !default;
+// Default value for $grid-columns
+// You can change it if you need more or less cols
+@mixin col($col, $grid-columns) {
+  width: (100% / $grid-columns) * $col;
+}
+
+%column {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: $grid-padding;
+  text-align: left;
+  vertical-align: top;
+}
+
+// Container
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  margin: $grid-container-margin;
+  max-width: 100%;
+  width: $grid-container-width;
+
+  &::after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+
+  &.full-width {
+    width: auto;
+  }
+
+  @if($grid-border == 'true') {
+    > div {
+      border: 1px solid $grid-border-color;
+    }
+  }
+
+  &.grid {
+    > div {
+      border: 1px solid $grid-border-color;
+      border-right: 0;
+
+      &:last-child {
+        border-right: 1px solid $grid-border-color;
+      }
+    }
+  }
+}
+
+// Each column
+[class^="column"],
+[class*="small-"] {
+  @extend %column;
+}
+
+// Small grid (Mobile first)
+@for $i from 1 through $grid-columns {
+  %small-#{$i} {
+    @include col($i, $grid-columns);
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  @if $grid-generate-small-html-classes == true {
+    .small-#{$i} {
+      @extend %small-#{$i};
+    }
+  }
+}
+
+// Large grid
+@for $i from 1 through $grid-columns {
+  %large-#{$i} {
+    @include col($i, $grid-columns);
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  @if $grid-generate-large-html-classes == true {
+    .large-#{$i} {
+      @extend %large-#{$i};
+    }
+  }
+}
+
+
+%omega {
+  clear: right;
+}

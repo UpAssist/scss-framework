@@ -1,0 +1,14 @@
+@mixin a($color, $hover-color: darken($color, 10%)) {
+  a {
+    color: $color;
+
+    &:link,
+    &:active {
+      color: $color;
+    }
+
+    &:hover {
+      color: $hover-color;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+@import 'https://fonts.googleapis.com/css?family=Arimo|Open+Sans|Raleway|Source+Sans+Pro';
+
+$font-family-arimo: 'Arimo', sans-serif;
+
+// Kick off with normalizing
+@import 'normalize';
+
+// All variables, override them when desired
+@import 'variables';
+
+// Default theme uses fontawesome (which should be loaded after variables)
+@import 'font-awesome';
+
+// Load animated.css
+@import url(http://s.mlcdn.co/animate.css);
+
+// Load the framework
+@import '../../framework';
+
+.brand {
+  @extend %small-3;
+  @extend %omega;
+
+  img {
+    margin: $global-margin;
+
+    max-width: 4rem;
+  }
+}
+
+body > nav {
+  @extend %small-9;
+}
+
+.top-bar {
+  position: fixed;
+}
+
+.background {
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 50rem;
+}
+

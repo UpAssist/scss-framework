@@ -1,0 +1,9 @@
+@import '../../config/variables';
+
+$primary-color: $crimson;
+$grid-generate-small-html-classes: true;
+
+$menu-trigger-background: transparentize($primary-color, .2);
+$menu-trigger-color: $white;
+
+$global-font-family: $font-family-arimo;

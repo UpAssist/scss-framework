@@ -1,0 +1,43 @@
+// Typography
+//$global-font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+$global-font-size: 1rem;
+//$global-l/ine-height: 1;
+
+// General
+$global-padding: 1rem;
+$global-margin: 1rem;
+
+// Colors
+// @see https://davidwalsh.name/sass-color-variables-dont-suck
+// @see http://chir.ag/projects/name-that-color/#6195ED
+$lime: #b0eb00;
+$bright-red: #b30015;
+$crimson: #dc143c;
+$dark-blue: #2a00b3;
+$deep-cerulean: #0077b3;
+$corn-flower-blue: #6195ed;
+$bondi-blue: #00b0b3;
+$cyan: #24fbff;
+$heliotrope: #8a7dff;
+$silver-chalice: #a6a6a6;
+$scorpion: #595959;
+$tundora: #444;
+$mine-shaft: #363636;
+$cod-gray: #111;
+$white: #fff;
+
+// Global colors
+$primary-color: $lime;
+
+// Grid
+//$grid-columns: 12;
+//$grid-padding: 0 .5rem;
+//$grid-condensed-container-width: 1240px;
+//$grid-generate-small-html-classes: false;
+// Menu
+$menu-trigger-padding: $global-padding / 2 $global-padding / 1.25;
+$menu-trigger-background: inherit;
+
+// Fontawesome variables
+$fa-font-path: '../assets/fonts';
+$fa-font-size-base: $global-font-size;

@@ -1,0 +1,49 @@
+$menu-trigger-padding: $global-padding / 2  $global-padding / 1.25 !default;
+$menu-trigger-background: transparentize($white, .2) !default;
+$menu-trigger-color: inherit !default;
+$menu-position: right !default;
+
+.menu-trigger {
+  background: $menu-trigger-background;
+  color: $menu-trigger-color;
+  display: inline-block;
+  padding: $menu-trigger-padding;
+  position: fixed;
+  vertical-align: middle;
+
+  @if($menu-position == right) {
+    right: 0;
+  }
+
+  + .menu {
+    display: none;
+  }
+}
+
+.side-menu {
+  $side-menu-background: $scorpion !default;
+  $side-menu-color: $white !default;
+  $side-menu-position: left !default;
+  $side-menu-width: 15rem !default;
+  $side-menu-padding: $global-padding 0 !default;
+  $side-menu-link-color: $white !default;
+  $side-menu-link-color-hover: darken($side-menu-color, 10%) !default;
+  $side-menu-box-shadow: 0 0 5px 0 rgba(0, 0, 0, .75) !default;
+
+  @include a($side-menu-link-color, $side-menu-link-color-hover);
+
+  background: $side-menu-background;
+  box-shadow: $side-menu-box-shadow;
+  color: $side-menu-color;
+  min-height: 100%;
+  padding: $side-menu-padding;
+  position: fixed;
+  top: 0;
+  width: $side-menu-width;
+  z-index: auto;
+
+  @if ($side-menu-position == right) {
+    right: 0;
+  }
+
+}

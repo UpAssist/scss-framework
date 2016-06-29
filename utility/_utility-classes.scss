@@ -1,0 +1,27 @@
+$render-utility-classes: true !default;
+
+%hide {
+  display: none;
+}
+
+%align-center {
+  text-align: center;
+}
+
+%align-right {
+  text-align: right;
+}
+
+@if ($render-utility-classes == true) {
+  .hide {
+    @extend %hide;
+  }
+
+  .align-center {
+    @extend %align-center;
+  }
+
+  .align-right {
+    @extend %align-right;
+  }
+}

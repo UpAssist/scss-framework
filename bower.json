@@ -1,0 +1,21 @@
+{
+  "name": "upassist-scss-framework",
+  "authors": [
+    "Henjo Hoeksma <henjo@upassist.com>"
+  ],
+  "description": "SCSS Framework",
+  "main": "",
+  "keywords": [
+    "scss",
+    "framework"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.upassist.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,17 @@
+.site-footer {
+  $footer-background-color: $mine-shaft !default;
+  $footer-font-size: .8rem !default;
+  $footer-font-color: $white !default;
+  $footer-padding: 2rem 0 !default;
+  $footer-margin-top: 2rem !default;
+  $footer-link-color: $white !default;
+  $footer-link-color-hover: darken($footer-link-color, 10%);
+
+  @include a($footer-link-color, $footer-link-color-hover);
+
+  background: $footer-background-color;
+  color: $footer-font-color;
+  font-size: $footer-font-size;
+  margin-top: $footer-margin-top;
+  padding: $footer-padding;
+}
